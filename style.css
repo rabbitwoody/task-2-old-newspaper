@@ -1,0 +1,340 @@
+/* подключаемые шрифты */
+@font-face {
+    font-family: 'hand_shop_typography_c30_deRg';
+    src: url('/fonts/webfontkit/fontscafe_handshoptypography-c30_demo-webfont.woff') format('woff2'),
+         url('/fonts/webfontkit/fontscafe_handshoptypography-c30_demo-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face{
+    font-family: "Hand Shop";
+    src: url("/fonts/Hand Shop/Fonts/fontscafe_handshoptypography-c30_demo.ttf");
+}
+@font-face{
+    font-family: "Averia Serif";
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-bold.ttf");
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-bolditalic.ttf");
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-italic.ttf");
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-light.ttf");
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-lightitalic.ttf");
+    src: url("/fonts/Averia Serif-FontZillion/Fonts/averiaserif-regular.ttf");
+    
+}
+@font-face{
+    font-family: "Carolyna Words";
+    src: url("/fonts/Carolyna Words/fonts/carolyna - words.ttf");
+}
+@font-face{
+    font-family: "Bienetresocial";
+    src: url("/fonts/Bienetresocial/Fonts/bienetresocial.ttf");
+}
+@font-face{
+    font-family: "UglyQua";
+    src: url("/fonts/UglyQua/UglyQua.ttf");
+}
+@font-face{
+    font-family: "Old Newspaper";
+    src: url("/fonts/Old Newspaper Types-FontZillion/Fonts/oldnewspapertypes.ttf");
+}
+@font-face{
+    font-family: "DK Courant"; 
+    src: url("/fonts/DK Courant-FontZillion/Fonts/dk courant.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+body, h1, h2, h3{
+   margin: 0;
+   padding: 0;
+}
+/* отступы по краям для всего контента на странице */
+.wrapper{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/* фон страницы, ширина, отцентровка */
+.newspaper{
+    background: radial-gradient(#ebd2aa, #f0d2a7);
+    /* height: 1500px; */
+    max-width: 1360px;
+    margin: auto;
+    color: #554535;
+}
+/* 'хедер' газеты */
+.newspaper__head{
+    padding-top: 70px;    
+}
+.newspaper__head::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+}
+.newspaper__head::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin-top: 12px;
+}
+.newspaper__head_content{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-column-gap: 20px;
+    text-align: center;
+}
+.newspaper__head_heading{
+    font-family: "DK Courant";
+    font-size: 100px;
+}
+.newspaper__head_subtitle{
+    font-family: "UglyQua";
+    /* font-family: "Old Newspaper"; */
+    font-size: 17px;
+    line-height: 1.2;
+    align-self: center;
+}
+.newspaper__head_subtitle p{
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+/* номер, дата и цена */
+.newspaper__head_circulation-info{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    text-align: center;
+    font-family: "Old Newspaper";
+    font-weight: bold;
+    font-size: 20px;
+}
+.newspaper__head_circulation::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin-bottom: 12px;
+}
+/* статьи газеты */
+.newspaper__main{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 35px;
+}
+/* первая колонка */
+.newspaper__main_column1 .ed_news{
+    font-size: 73px;
+    font-family: "Hand Shop";
+}
+.car{
+    float: left;
+    margin-right: 15px;
+}
+.newspaper__main_column1 p{
+    text-align: center;
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Old Newspaper";
+}
+.newspaper__main_column1 h3{
+    font-family: "Averia Serif";
+    font-size: 34px;
+    margin-bottom: -10px;
+}
+/* .newspaper__main_column1-article1{
+    padding-bottom: 50px;
+} */
+.newspaper__main_column1-article1::after{
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #544434;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.newspaper__main_column1-article2::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin-bottom: 25px;
+}
+.newspaper__main_column1-extra{
+    font-family: "Hand Shop";
+    font-size: 49px;
+    font-weight: 500;
+}
+.newspaper__main_column1-subtitle{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    text-align: center;
+    align-items: center;
+}
+.newspaper__main_column1-subtitle img{
+    width: 30px;
+}
+.newspaper__main_column1-subtitle h2{
+    font-family: "Averia Serif";
+    font-size: 35px;
+}
+.newspaper__main_column1-article2 .camera{
+    float: right;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+/* .newspaper__main_column1-article3{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 15px;
+} */
+.newspaper__main_column1-article3 .welcome{
+   float: left;
+   margin-right: 15px;
+}
+.headline::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin-top: 5px;
+       
+}
+.headline::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    /* margin-bottom: 10px; */
+}
+.headline{
+    font-family: "Averia Serif";
+    font-size: 35px;
+    display: inline-block;
+}
+
+
+/* вторая колонка */
+.newspaper__main_column2{
+    text-align: center;
+}
+.newspaper__main_column2 .read_about{
+    font-family: "Averia Serif";
+    font-size: 32px;
+    font-weight: 400;
+}
+.newspaper__main_column2 .read_about::before{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+}
+.newspaper__main_column2 .read_about::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+}
+.newspaper__main_column2 h2{
+    padding-top: 10px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: "Averia Serif";
+    line-height: 0.9;
+    margin-bottom: 10px;
+}
+.newspaper__main_column2 p{
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Old Newspaper";
+}
+.newspaper__main_column2 .important{
+    margin-top: 28px;
+}
+.newspaper__main_column2 .phonenumber{
+    margin-top: 10px;
+}
+.newspaper__main_column2 .number{
+    font-size: 46px;
+    font-family: "Averia Serif";
+}
+.newspaper__main_column2 .number__subtitle{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 7px;
+    font-family: "Old Newspaper";
+    font-size: 16px;
+}
+
+
+
+/* третья колонка */
+.newspaper__main_column3 p{
+    text-align: center;
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Old Newspaper";
+}
+.newspaper__main_column3 img{
+    padding-top: 10px;
+}
+.newspaper__main_column3 .u_title{
+    font-family: "Hand Shop";
+    font-size: 52px;
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.all_info{
+    font-family: "Averia Serif";
+    font-size: 32px;
+    font-weight: 200;
+}
+.all_info::before, .all_info::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin: 5px 0;
+}
+.double_border::before{
+    content: "";
+    display: block;
+    height: 6px;
+    width: 100%;
+    background-color: #544434;
+    margin-top: 25px;
+}
+.double_border::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #544434;
+    margin-top: 5px;
+}
+.newspaper__main_column3-retro{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Averia Serif";
+}
+.newspaper__main_column3-retro h2{
+    padding-top: 8px;
+}
+.newspaper__main_column3-retro img{
+    width: 30px;
+}

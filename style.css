@@ -1117,12 +1117,5 @@ body, h1, h2, h3{
     .newspaper__main_column3-retro img{
         width: 28px;
     }
-    /* .newspaper__main_column3{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        text-align: center;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 20px;
-    } */
+    
 }
